@@ -40,6 +40,19 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.23",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.6"
+  },
+
+
+  "homepage": "https://MohanKrishna27062001.github.io/Mohan_Portfolio",
+
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
