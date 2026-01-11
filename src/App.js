@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// Added FileText to imports for the resume icon
 import { Mail, Linkedin, Github, ExternalLink, Briefcase, GraduationCap, Award, Code, FileText } from 'lucide-react';
 
 function App() {
@@ -72,11 +71,11 @@ function App() {
                   +1 (404) 819-5786
                 </a>
 
-                {/* NEW RESUME BUTTON */}
-                {/* Ensure resume.pdf is in your public folder */}
+                {/* FIXED RESUME BUTTON FOR GITHUB PAGES */}
                 <a
-                  href="/resume.pdf"
-                  download="Mohan_Krishna_Resume.pdf"
+                  href={`${process.env.PUBLIC_URL}/resume.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-4 py-3 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-all flex-1 md:flex-none"
                 >
                   <FileText size={20} />
